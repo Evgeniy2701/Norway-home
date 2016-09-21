@@ -1,0 +1,71 @@
+<html>
+<style>
+    td.menu:hover{background-color:orange;}
+  body {
+    background-color: rgb(70,218,244);
+}
+table.layout{
+  border-collapse: collapse;
+  width:50%;
+  text-align: center;
+  background: rgb(135,248,160)
+}
+h1{text-align:center;}
+</style>
+<script type="text/javascript">
+function show_pic(){
+//alert('hi');
+var c1_elem = document.getElementById("c1");
+var c2_elem = document.getElementById("c2");
+var c3_elem = document.getElementById("c3");
+c1_elem.style.display='none';
+c2_elem.style.display='block';
+c3_elem.style.display='none';
+}
+function show_text(){
+var c1_elem = document.getElementById("c1");
+var c2_elem = document.getElementById("c2");
+var c3_elem = document.getElementById("c3");
+c1_elem.style.display = 'block';
+c2_elem.style.display='none';
+c3_elem.style.display='none';
+}
+function show_pic1() {
+    //alert('hi');
+var c1_elem = document.getElementById("c1");
+var c2_elem = document.getElementById("c2");
+var c3_elem = document.getElementById("c3");
+c1_elem.style.display='none';
+c2_elem.style.display='none';
+c3_elem.style.display='block';
+}
+</script>
+<body background="C:\Users\User\Desktop/nbg.jpg">
+<h1> <font size=12 color="Blue" face="mv boli">Norway</font></h1>
+<table align="center" class="layout">
+<tr>
+<td class="menu" id="m1" onclick="show_text()" width="33%"><font size=10 color="Blue" face="mv boli"> About </font></td>
+<td class="menu" id="m2" onclick="show_pic()" width="33%"><font size=10 color="Blue" face="mv boli">image</font></td>
+<td class="menu" id="m3" onclick="show_pic1()" width="33%"> <font size=10 color="Blue" face="mv boli">questions</font></td> 
+</tr>
+<tr>
+<td colspan="3"> <div id="c1">
+Nor-......
+</div>
+
+<div id="c2">
+<img src="n.jpg">
+</div>
+<div id="c3">
+ffggf
+</div>
+</td>
+</tr>
+
+</table>
+
+
+
+
+</body>
+</html>
